@@ -122,7 +122,7 @@ export default function Home() {
               </div>
               <div className="flex items-center">
                 <span className="ml-8 w-32 font-medium text-gray-500">Status</span>
-                <span className={`font-bold px-3 py-1 rounded-full ${data.status === 'LULUS' ? 'bg-green-100 text-red-700' : 'bg-green-100 text-green-700'}`}>
+                <span className={`font-bold px-3 py-1 rounded-full ${data.status === 'LULUS' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                   {data.status}
                 </span>
               </div>
@@ -130,7 +130,7 @@ export default function Home() {
 
             <h3 className="font-semibold text-gray-700 mb-2">Nilai</h3>
             <div className="overflow-x-auto">
-              <table className="min-w-full  rounded-xl border border-gray-200 overflow-hidden">
+              <table className="min-w-full rounded-xl border border-gray-200 overflow-hidden">
                 <thead>
                   <tr className="bg-blue-50">
                     <th className="px-4 py-2 text-left text-gray-600 font-semibold">Mata Pelajaran</th>
