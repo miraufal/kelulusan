@@ -122,7 +122,7 @@ export default function Home() {
               </div>
               <div className="flex items-center">
                 <span className="ml-8 w-32 font-medium text-gray-500">Status</span>
-                <span className={`font-bold px-3 py-1 rounded-full ${data.status === 'LULUS' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                <span className={`font-bold px-3 py-1 rounded-full ${data.status === 'LULUS' ? 'bg-blue-100 text-blue-700' : 'bg-green-200 text-green-800'}`}>
                   {data.status}
                 </span>
               </div>
