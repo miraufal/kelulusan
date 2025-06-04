@@ -46,15 +46,15 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-200 to-white flex flex-col items-center px-4 py-12">
-      <div className="p-8 w-full flex flex-col items-center">
+    <div className="min-h-screen bg-gradient-to-br from-blue-200 to-white flex flex-col items-center px-2 sm:px-4 py-6 sm:py-12">
+      <div className="p-4 sm:p-8 w-full max-w-2xl flex flex-col items-center">
         {/* Custom Image */}
         <Image
           src="/logo-kelulusan.jpg"
           alt="Logo Kelulusan"
           width={128}
           height={128}
-          className="w-32 h-32 rounded-full mb-4 drop-shadow-lg"
+          className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 drop-shadow-lg"
           priority
         />
         <div className="text-center mb-8 w-full">
@@ -65,23 +65,23 @@ export default function Home() {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-xl flex gap-2 bg-gray-100 shadow-2xl rounded-full p-2 border border-gray-200 transition-all focus-within:shadow-2xl"
+          className="w-full max-w-xl flex flex-wrap gap-2 bg-gray-100 shadow-2xl rounded-xl p-2 border border-gray-200 transition-all focus-within:shadow-2xl"
         >
           <input
             type="text"
             placeholder="Masukkan NISN"
             value={nisn}
             onChange={(e) => setNisn(e.target.value)}
-            className="flex-grow bg-gray-100 border-none px-4 py-3 rounded-full focus:outline-none text-lg text-gray-800 placeholder-gray-400"
+            className="flex-grow min-w-0 bg-gray-100 border-none px-4 py-3 rounded-full focus:outline-none text-lg text-gray-800 placeholder-gray-400"
             autoFocus
           />
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-2 rounded-full font-semibold shadow-md disabled:opacity-60"
+            className="w-md sm:w-md bg-blue-500 hover:bg-blue-700 transition text-white px-4 sm:px-6 py-2 rounded-full font-semibold shadow-xl disabled:opacity-60"
             disabled={loading}
           >
             {loading ? (
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2 justify-center">
                 <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="white" strokeWidth="4" fill="none"/>
                   <path className="opacity-75" fill="white" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/>
@@ -99,7 +99,7 @@ export default function Home() {
         )}
 
         {data && (
-          <div className="mt-10 w-full max-w-xl bg-white rounded-3xl shadow-2xl p-8 border border-gray-100 animate-fade-in">
+          <div className="mt-6 w-full max-w-xl bg-white rounded-3xl shadow-2xl p-4 sm:p-8 border border-gray-100 animate-fade-in">
             <h2 className="text-2xl font-bold text-blue-700 mb-6 flex items-center gap-2">
               <svg className="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -130,7 +130,7 @@ export default function Home() {
 
             <h3 className="font-semibold text-gray-700 mb-2">Nilai</h3>
             <div className="overflow-x-auto">
-              <table className="min-w-full rounded-xl border border-gray-200 overflow-hidden">
+              <table className="min-w-full rounded-xl border border-gray-200 overflow-hidden text-sm sm:text-base">
                 <thead>
                   <tr className="bg-blue-50">
                     <th className="px-4 py-2 text-left text-gray-600 font-semibold">Mata Pelajaran</th>
