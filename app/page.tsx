@@ -50,11 +50,11 @@ export default function Home() {
       <div className="p-4 sm:p-8 w-full max-w-2xl flex flex-col items-center">
         {/* Custom Image */}
         <Image
-          src="/logo-kelulusan.jpg"
+          src="/logo-kelulusan.png"
           alt="Logo Kelulusan"
-          width={128}
-          height={128}
-          className="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 drop-shadow-lg"
+          width={132}
+          height={132}
+          className="w-24 h-24 sm:w-32 sm:h-32 rounded-xl mb-4 drop-shadow-lg"
           priority
         />
         <div className="text-center mb-8 w-full">
