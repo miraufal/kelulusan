@@ -138,7 +138,7 @@ export default function Home() {
                   </tr>
                 </thead>
                 <tbody>
-                  {data.nilai.map((n: any, i: number) => (
+                  {data.nilai.map((n, i) => (
                     <tr key={i} className="even:bg-gray-50">
                       <td className="px-4 py-2">{n.mapel}</td>
                       <td className="px-4 py-2 font-bold text-gray-700">{n.nilai}</td>
