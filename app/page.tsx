@@ -65,7 +65,7 @@ export default function Home() {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-xl flex flex-wrap gap-2 bg-gray-100 shadow-2xl rounded-xl p-2 border border-gray-200 transition-all focus-within:shadow-2xl"
+          className="w-full max-w-xl flex flex-wrap gap-2 bg-gray-100 shadow-2xl rounded-xl p-2 border border-gray-200 transition-all focus-within:shadow-2xl justify-center"
         >
           <input
             type="text"
@@ -77,7 +77,7 @@ export default function Home() {
           />
           <button
             type="submit"
-            className="w-md sm:w-md bg-blue-500 hover:bg-blue-700 transition text-white px-4 sm:px-6 py-2 rounded-full font-semibold shadow-xl disabled:opacity-60"
+            className="w-full sm:w-auto bg-blue-500 hover:bg-blue-700 transition text-white px-4 sm:px-6 py-2 rounded-full font-semibold shadow-xl disabled:opacity-60"
             disabled={loading}
           >
             {loading ? (
